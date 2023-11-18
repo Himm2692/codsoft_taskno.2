@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Roboto:wght@300;400&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(198 198 198)
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: aliceblue;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 1.05rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    font-size: 1.1rem;
+    color: rgb(236, 75, 26);
+}
+.section-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+.left h1{
+     font-size: 40px;
+}
+.left p{
+    margin-top: 20px;
+     font-size: 30px;
+     color: grey;
+}
+.left a{
+    padding: 10px;
+    display: flex;
+    width: 100px;
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(163, 63, 17);
+    border: 2px solid black;
+}
+.right img{
+    margin: 100px;
+    width: 400px;
+    height: 400px;
+}
+
+
+.section-2 .about{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50px;
+}
+.left-about img{
+    
+    display: flex;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.right-about{
+    font-size: 1.6rem;
+    width: 89vw;
+    justify-content: center;
+    margin: 51px;
+    margin-left: 152px;
+    font-family: 'Playpen Sans', cursive;
+}
+.right-about h1{
+    margin-bottom: 20px;
+}
+
+.section-3{
+    margin-top: 100px;
+}
+.section-3 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+
+.projects{
+    display: grid;
+    grid-template-columns:  repeat(3, minmax(250px, 1fr));
+}
+
+.project{
+    gap: 15px;
+    margin-left: 10%;
+    width: 300px;
+    padding: 50px;
+    border: 2px solid rgb(188, 174, 174);
+    background-color: rgb(222, 221, 221);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.project a{
+    text-decoration: none;
+    border: 2px solid black;
+    width: 55px;
+    height: 25px;
+    display: flex;
+    color: white;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-4{
+    margin-top: 200px;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.contact .left{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    gap: 10px;
+}
+.contact .left i{
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+button{
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+    background-color: red;
+}
+.section-4 h1{
+    margin-left: 40%;
+    font-size: 2.3rem;
+}
+
+ form textarea{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 7px;
+    gap: 20px;
+ }
+ form input{
+    width: 100%;
+    height: 30px;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    gap: 20px;
+ }
+
+ footer{
+    height: 60px;
+    background-color: #939394;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+ }
+
+
+
+ @media only screen and (max-width: 450px) {
+    
+    nav ul li{
+        margin: 0 7px;
+    }
+    
+    .section-1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .section-2 .about{
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    
+    
+    .section-3 .projects{
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    .section-1 .right img{
+        width: 250px;
+        height: 250px;
+        margin-left: 0px;
+    }
+    
+    .section-2 .left-about img{
+        margin-left: 0px;
+        width: 250px;
+        height: 250px;
+        margin-right: 30px;
+    }
+    .section-2 .right-about{
+        margin-left: 40px;
+    }
+    
+    .section-3 .project{
+        margin-top: 20px;
+        padding: 18px;
+    }
+    .section-4 h1{
+        margin-left: 25%;
+    }
+    .section-4{
+        margin-top: 100px;
+    }
+    .section-4 .contact{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    form input{
+        width: 95%;
+        padding: 0;
+        height: 40px;
+
+    }
+    form textarea{
+        width: 95%;
+
+        padding: 0;
+
+    }
+ }
